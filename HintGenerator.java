@@ -1,7 +1,7 @@
 //function to generate hints if the hint counter is equal to 1 and 2
 
 class HintGenerator{
-public static String generatehint(int hintcounter){
+public static String generatehint(int hintcounter,int target){
     //first hint tells if the number is odd or even
     if(hintcounter==1)
         return (target%2==0)?"Hint:even number":"Hint:odd number";
