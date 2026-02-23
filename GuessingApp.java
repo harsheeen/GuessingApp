@@ -1,5 +1,5 @@
 /** 
- * Guessing app - use case 3 : game initilaistion
+ * Guessing app - use case 4 : game initilaistion + user input + hint + validateinput
  * application entry point
  * no user entry
  */
@@ -17,6 +17,7 @@ public class GuessingApp{
     attempts++;
     hint++;
     int guess=sc.nextInt();
+    guess=ValidateInput.validainput(guess);
     int valid= game.validateguess(guess,game.targetnumber);
     if(valid==1){
         break;
