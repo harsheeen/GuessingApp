@@ -8,10 +8,18 @@ import java.util.Scanner;
  */
 
 public class GuessingApp{
+
     public static void main(String[] args)throws ValidateInput {
         Scanner sc=new Scanner(System.in);
+        boolean restart;
+        do{
+            System.out.println("enter the player name");
+            
+            String player=sc.nextLine();
         int valid=0;
-        System.out.println("welcome to guessing game");
+         System.out.println("**************************");
+        System.out.println("* WELCOME TO GUESSING GAME *");
+        System.out.println("**************************");
         
         GameConfig game=new GameConfig();
         
@@ -38,5 +46,7 @@ public class GuessingApp{
     System.out.println(HintGenerator.generatehint(hint,game.getTargetNumber()));
     }
     StorageService.saveResult("Player", attempts,(valid==1)?true:false);
+    restart = GameController.GameRestarter(sc);
+}while(restart);
 }
 }
