@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class GuessingApp{
     public static void main(String[] args)throws ValidateInput {
         Scanner sc=new Scanner(System.in);
+        int valid=0;
         System.out.println("welcome to guessing game");
         
         GameConfig game=new GameConfig();
@@ -29,12 +30,13 @@ public class GuessingApp{
  // take the user input
             
             int guess=ValidateInput.validainput(sc.nextLine()); //validate the user input 
-            int valid= GuessValidator.validateguess(guess,game.targetnumber); //valid the guess by displaying "go high" or "go low" or return 1 if the guess is right
+             valid= GuessValidator.validateguess(guess,game.targetnumber); //valid the guess by displaying "go high" or "go low" or return 1 if the guess is right
             
             if(valid==1){ //user guess correct target
                 break;
     }
     System.out.println(HintGenerator.generatehint(hint,game.getTargetNumber()));
     }
+    StorageService.saveResult("Player", attempts,(valid==1)?true:false);
 }
 }
