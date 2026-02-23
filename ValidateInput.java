@@ -1,6 +1,6 @@
 class ValidateInput extends Exception {
   //define the user defined exception function
-    public ValidateInput(String message) {
+    public static ValidateInput(String message) {
         super(message); 
         System.out.println("UserDefinedException created: " + message);
     }
