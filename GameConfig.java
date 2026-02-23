@@ -1,3 +1,8 @@
+/** Gameconfig function
+print the details of the game such as limit and number of hints 
+**/
+
+
 import java.util.Random;
 
 class GameConfig{
@@ -11,16 +16,19 @@ public GameConfig() {
     this.targetnumber=random.nextInt(MAX-MIN+1)+MIN;
 	
 }
+//displays the target
 public int getTargetNumber(){
     return targetnumber;
 }
+//display the max attempt sof the user 
 public int getMaxattempts(){
     return MAX_ATTEMPTS;
 }
-
+//display the max hint sthe user have
 public int getMaxhints(){
     return MAX_HINTS;
 }
+//display the rules of the game
 public void showrules(){
     System.out.println("guess a number between " +MIN+ "and"+MAX);
     System.out.println("You have"+MAX_ATTEMPTS+"attempts");
