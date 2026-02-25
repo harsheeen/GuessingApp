@@ -15,7 +15,7 @@ try(
 
     }
 catch(IOException e){
-    System.out.println("unable to print game result");
+    System.out.println("unable to the print game result");
 }
 
 }
