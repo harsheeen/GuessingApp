@@ -45,7 +45,7 @@ public class GuessingApp{
     }
     System.out.println(HintGenerator.generatehint(hint,game.getTargetNumber()));
     }
-    StorageService.saveResult("Player", attempts,(valid==1)?true:false);
+    StorageService.saveResult("Player : ", attempts,(valid==1)?true:false);
     restart = GameController.GameRestarter(sc);
 }while(restart);
 }
