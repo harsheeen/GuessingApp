@@ -10,7 +10,7 @@ class ValidateInput extends Exception {
         int value = Integer.parseInt(input);
         if (value < 1 || value > 100) {
          
-            throw new ValidateInput("Number must be between 1 & 100");
+            throw new ValidateInput("A number must be between 1 & 100 ");
         }
         return value;
     }
