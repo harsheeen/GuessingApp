@@ -9,6 +9,6 @@ public static String generatehint(int hintcounter,int target){
     else if(hintcounter==2)
         return (target>50)?"Hint: Number is greater than 50":"Hint:Number is less than 50";
     // no more hints if the hint counter is above 2
-    return "No more hints";
+    return "No more hints available";
 } 
 }
