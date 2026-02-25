@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 /** 
- * Guessing app - use case 4 : game initilaistion + user input + hint + validateinput
+ * Guessing app - use case 6 : game initilaistion + user input + hint + validateinput + save result in txt + restart 
  * application entry point
 @author Harsheen
-@version 4.0
+@version 6.0
  */
 
 public class GuessingApp{
@@ -12,7 +12,7 @@ public class GuessingApp{
     public static void main(String[] args)throws ValidateInput {
         Scanner sc=new Scanner(System.in);
         boolean restart;
-        do{
+        do{  //loop runs until user enters anything rather than yes
             System.out.println("enter the player name");
             
             String player=sc.nextLine();
