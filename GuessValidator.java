@@ -2,7 +2,7 @@
 class GuessValidator{
 public static int validateguess(int guess, int target){
     if(target==guess){ //return 1 if the user input is same as target
-        System.out.println("correct");
+        System.out.println("Correct Guess");
         return 1;
     }
     else if(target>guess){ //return string go high if the user input is less than target
