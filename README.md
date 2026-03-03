@@ -2,7 +2,7 @@ A hands-on **Java number guessing application** designed to help learners master
 
 ---
 
-## 📖 Learning Objectives
+##  Learning Objectives
 - Understand **Java syntax** and **data types**
 - Practice **control flow** (loops, conditionals, switch)
 - Apply **functions and methods**
@@ -12,7 +12,7 @@ A hands-on **Java number guessing application** designed to help learners master
 
 ---
 
-## 🚀 Features & Use Cases
+##  Features & Use Cases
 
 ### 1. Game Initialization
 - Random number generation within a predefined range
